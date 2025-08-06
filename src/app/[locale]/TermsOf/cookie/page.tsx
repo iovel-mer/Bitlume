@@ -14,6 +14,16 @@ export default function CookiePage() {
     <>
       <Header />
       <main className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative overflow-hidden">
+        <div className='flex justify-start m-8'>
+                <Link
+                  href="/"
+                  className='inline-flex items-center px-6 py-3 bg-gray-900/60 backdrop-blur-sm rounded-full border border-purple-400/30 hover:bg-gray-800/60 hover:border-purple-400/50 transition-all duration-300 group text-sm font-semibold text-white shadow-lg shadow-purple-500/20'
+                >
+                  <Home className='h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400' />
+                  {t('backToHome')}
+                  <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400' />
+                </Link>
+              </div>
         
         {/* Background Grid */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_2px,transparent_2px),linear-gradient(90deg,rgba(139,69,244,0.05)_2px,transparent_2px)] bg-[size:60px_60px]"></div>
@@ -30,16 +40,9 @@ export default function CookiePage() {
         <div className="relative z-10 px-6 py-12">
           <div className="max-w-6xl mx-auto">
             
-            {/* Header Section */}
+           
             <div className="text-center mb-16">
-               <Link
-                  href="/"
-                  className='inline-flex items-center px-6 py-3 bg-gray-900/60 backdrop-blur-sm rounded-full border border-purple-400/30 hover:bg-gray-800/60 hover:border-purple-400/50 transition-all duration-300 group text-sm font-semibold text-white shadow-lg shadow-purple-500/20'
-                >
-                  <Home className='h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400' />
-                  {t('backToHome')}
-                  <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400' />
-                </Link>
+              
 
               <h1 className="text-6xl md:text-7xl font-black mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-indigo-200 mt-8 animate-pulse tracking-wide drop-shadow-lg">
                 {t("title")}

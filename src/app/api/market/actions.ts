@@ -97,12 +97,12 @@ export async function getMarketData() {
 
     const coinNames = {
       BTC: "Bitcoin",
-      ETH: "Eth",
+      ETH: "Etherium",
       ADA: "Cardano",
       DOT: "Polkadot",
       BNB: "Binance",
       SOL: "Solana",
-      AVAX: "Aval",
+      AVAX: "Avalanche",
       MATIC: "Polygon",
     }
 

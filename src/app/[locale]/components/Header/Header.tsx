@@ -33,7 +33,7 @@ export const Header: React.FC = () => {
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-white via-cyan-200 to-purple-200 bg-clip-text text-transparent">
-                  Bitlume
+                  BITLUME
                 </h1>
               </div>
             </Link>

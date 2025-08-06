@@ -134,39 +134,7 @@ export const Hero: React.FC = () => {
               </Link>
             </div>
 
-            {/* Stats Grid */}
-            <div className="grid grid-cols-3 gap-6 pt-8">
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-green-500/30 to-emerald-500/30 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-                <div className="relative bg-slate-900/60 backdrop-blur-xl border border-green-400/30 rounded-3xl p-6 text-center hover:border-green-400/60 hover:bg-green-900/20 transition-all duration-300">
-                  <div className="flex items-center justify-center mb-3">
-                    <DollarSign size={28} className="text-green-400 animate-pulse" />
-                  </div>
-                  <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-300 mb-2">$2.4T</div>
-                  <div className="text-xs text-green-300 uppercase tracking-widest font-bold">{t("stats.volume")}</div>
-                </div>
-              </div>
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/30 to-purple-500/30 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-                <div className="relative bg-slate-900/60 backdrop-blur-xl border border-cyan-400/30 rounded-3xl p-6 text-center hover:border-cyan-400/60 hover:bg-cyan-900/20 transition-all duration-300">
-                  <div className="flex items-center justify-center mb-3">
-                    <Users size={28} className="text-cyan-400 animate-pulse" />
-                  </div>
-                  <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-300 mb-2">18.7M</div>
-                  <div className="text-xs text-cyan-300 uppercase tracking-widest font-bold">{t("stats.traders")}</div>
-                </div>
-              </div>
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/30 to-blue-500/30 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-                <div className="relative bg-slate-900/60 backdrop-blur-xl border border-purple-400/30 rounded-3xl p-6 text-center hover:border-purple-400/60 hover:bg-purple-900/20 transition-all duration-300">
-                  <div className="flex items-center justify-center mb-3">
-                    <TrendingUp size={28} className="text-purple-400 animate-pulse" />
-                  </div>
-                  <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-300 mb-2">0.03%</div>
-                  <div className="text-xs text-purple-300 uppercase tracking-widest font-bold">{t("stats.fees")}</div>
-                </div>
-              </div>
-            </div>
+           
           </div>
 
           {/* Market Terminal */}

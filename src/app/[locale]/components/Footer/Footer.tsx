@@ -3,7 +3,7 @@
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
-import { Cpu, Bitcoin, Rocket, Zap } from 'lucide-react';
+import { Cpu, Bitcoin, Rocket, Zap, Coins } from 'lucide-react';
 
 export default function Footer() {
   const tFooter = useTranslations('footer');
@@ -60,12 +60,20 @@ export default function Footer() {
                 <div className="relative group">
                   <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 to-indigo-500 blur opacity-40 transition duration-300 group-hover:opacity-60 rounded-xl" />
                 </div>
-                 <div className='flex gap-4 items-center'>
-                   <Bitcoin size={24} className="text-white" />
-                   <span className='text-3xl font-black tracking-wide bg-gradient-to-r from-purple-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-lg'>
-                    Bitlume
-                   </span>
-                 </div>
+                 <Link href={`/${locale}`} className="flex items-center space-x-4">
+              <div className="relative group">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500 to-purple-600 flex items-center justify-center shadow-2xl shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-all duration-300 group-hover:scale-110 border border-cyan-400/40">
+                  <Coins size={24} className="text-white" />
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-2xl blur-sm opacity-40 group-hover:opacity-70 transition-opacity duration-300 -z-10"></div>
+              </div>
+              <div>
+                <h1 className="text-2xl font-bold bg-gradient-to-r from-white via-cyan-200 to-purple-200 bg-clip-text text-transparent">
+                  BITLUME
+                </h1>
+              </div>
+            </Link>
               </div>
               <p className='text-gray-300 mb-6 max-w-sm text-lg leading-relaxed'>
                 {tFooter('description')}
@@ -160,7 +168,7 @@ export default function Footer() {
             <div className="inline-flex items-center space-x-4 px-8 py-4 bg-gradient-to-r from-gray-800/60 to-slate-900/60 backdrop-blur-xl border border-purple-400/30 rounded-full shadow-lg shadow-purple-500/20">
               <span className="text-purple-400 animate-pulse">●</span>
               <span className="text-gray-300 font-medium">
-                © {new Date().getFullYear()} Bitlume {tFooter('rights')}
+                © {new Date().getFullYear()} BITLUME {tFooter('rights')}
               </span>
             </div>
           </div>

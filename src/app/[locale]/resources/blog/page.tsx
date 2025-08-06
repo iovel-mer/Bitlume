@@ -34,6 +34,16 @@ export default function BlogPage() {
     <>
       <Header />
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative">
+       <div className='flex justify-start p-8'>
+                <Link
+                  href="/"
+                  className='inline-flex items-center px-6 py-3 bg-gray-900/60 backdrop-blur-sm rounded-full border border-purple-400/30 hover:bg-gray-800/60 hover:border-purple-400/50 transition-all duration-300 group text-sm font-semibold text-white shadow-lg shadow-purple-500/20'
+                >
+                  <Home className='h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400' />
+                  {t('backToHome')}
+                  <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400' />
+                </Link>
+              </div>
       {/* Background Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(139,69,244,0.05)_1px,transparent_1px)] bg-[size:30px_30px] pointer-events-none" />
       
@@ -48,14 +58,7 @@ export default function BlogPage() {
 
       <main className="container mx-auto px-4 py-8 md:py-12 lg:py-16">
         <div className="max-w-6xl mx-auto">
-         <Link 
-              href="/" 
-              className='inline-flex items-center px-6 py-3 mb-14 bg-gray-900/60 backdrop-blur-sm rounded-full border border-purple-400/30 hover:bg-gray-800/60 hover:border-purple-400/50 transition-all duration-300 group text-sm font-semibold text-white shadow-lg shadow-purple-500/20'
-            >
-              <Home className='h-4 w-4 mr-2 text-purple-400 group-hover:-translate-x-1 transition-transform duration-300' />
-              {t('backToHome')}
-              <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400' />
-            </Link>
+      
 
           {/* Hero Section */}
           <div className="text-center mb-12">

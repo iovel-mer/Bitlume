@@ -79,27 +79,8 @@ export default function HelpPage(){
     <>
       <Header />
       <main className="bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative px-4 py-16 sm:px-6 lg:px-8 mx-auto min-h-screen overflow-hidden text-white">
-        {/* Background Grid */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(139,69,244,0.05)_1px,transparent_1px)] bg-[size:30px_30px] pointer-events-none" />
-        
-        {/* Modern Background Orbs */}
-        <div className="absolute top-20 right-16 w-64 h-64 bg-gradient-to-br from-purple-500/20 to-indigo-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-32 left-20 w-80 h-80 bg-gradient-to-br from-indigo-500/15 to-cyan-500/15 rounded-full blur-3xl animate-bounce" style={{animationDuration: '6s'}}></div>
-        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 w-48 h-48 bg-gradient-to-br from-purple-500/15 to-pink-500/15 rounded-full blur-2xl animate-ping" style={{animationDuration: '3s'}}></div>
-        <div className="absolute bottom-1/4 right-1/3 w-56 h-56 bg-gradient-to-br from-cyan-500/15 to-blue-500/15 rounded-full blur-3xl animate-pulse" style={{animationDuration: '5s'}}></div>
-        
-        {/* Floating Particles */}
-        <div className="absolute top-20 left-20 w-3 h-3 bg-purple-400 rounded-full animate-bounce opacity-60"></div>
-        <div className="absolute top-40 right-32 w-2 h-2 bg-indigo-400 rounded-full animate-bounce opacity-60" style={{animationDelay: '0.5s'}}></div>
-        <div className="absolute bottom-32 left-1/3 w-2.5 h-2.5 bg-cyan-400 rounded-full animate-bounce opacity-60" style={{animationDelay: '1s'}}></div>
-
-        {/* Page Content */}
-        <div className="relative z-10 max-w-7xl mx-auto">
-          {/* Hero Section */}
-          <section className="text-center mb-24">
-            {/* Back to Home Link */}
-            <div className='flex justify-start mb-12'>
-              <Link
+         <div className='flex justify-start'>
+                <Link
                   href="/"
                   className='inline-flex items-center px-6 py-3 bg-gray-900/60 backdrop-blur-sm rounded-full border border-purple-400/30 hover:bg-gray-800/60 hover:border-purple-400/50 transition-all duration-300 group text-sm font-semibold text-white shadow-lg shadow-purple-500/20'
                 >
@@ -107,7 +88,18 @@ export default function HelpPage(){
                   {t('backToHome')}
                   <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400' />
                 </Link>
-            </div>
+              </div>
+        {/* Background Grid */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(139,69,244,0.05)_1px,transparent_1px)] bg-[size:30px_30px] pointer-events-none" />
+        
+     
+       
+        {/* Page Content */}
+        <div className="relative z-10 max-w-7xl mx-auto">
+          {/* Hero Section */}
+          <section className="text-center mb-24">
+            {/* Back to Home Link */}
+          
 
             {/* Hero Badge */}
             <div className="inline-flex items-center px-6 py-3 bg-gray-900/50 backdrop-blur-md rounded-full border border-purple-400/40 mb-8 shadow-lg shadow-purple-500/20">

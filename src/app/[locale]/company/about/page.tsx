@@ -25,9 +25,8 @@ export default function AboutPage() {
         <div className="absolute bottom-32 left-1/3 w-2.5 h-2.5 bg-cyan-400 rounded-full animate-bounce opacity-60" style={{animationDelay: '1s'}}></div>
 
         {/* HERO SECTION */}
-        <section className="py-10 md:py-10 text-center px-6 md:px-12 max-w-3xl mx-auto relative z-10">
-          <div className="flex justify-center mb-16">
-             <Link
+           <div className='flex justify-start m-10'>
+                <Link
                   href="/"
                   className='inline-flex items-center px-6 py-3 bg-gray-900/60 backdrop-blur-sm rounded-full border border-purple-400/30 hover:bg-gray-800/60 hover:border-purple-400/50 transition-all duration-300 group text-sm font-semibold text-white shadow-lg shadow-purple-500/20'
                 >
@@ -35,7 +34,8 @@ export default function AboutPage() {
                   {t('backToHome')}
                   <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400' />
                 </Link>
-          </div>
+              </div>
+        <section className="py-10 md:py-10 text-center px-6 md:px-12 max-w-3xl mx-auto relative z-10">
 
           <h1 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-indigo-200 mb-6 tracking-wide drop-shadow-lg">
             {t("title")}

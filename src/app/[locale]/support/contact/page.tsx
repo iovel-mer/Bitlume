@@ -69,30 +69,8 @@ export default function ContactPage() {
     <>
       <Header />
       <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative overflow-hidden">
-        {/* Background Grid */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(139,69,244,0.05)_1px,transparent_1px)] bg-[size:30px_30px] pointer-events-none" />
-
-        {/* Modern Background Effects */}
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,rgba(139,69,244,0.15),transparent_50%)]"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_75%,rgba(99,102,241,0.15),transparent_50%)]"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_60%)]"></div>
-        </div>
-
-        {/* Floating Elements */}
-        <div className="absolute top-20 right-16 w-48 h-48 bg-gradient-to-br from-purple-500/30 to-indigo-500/30 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 left-20 w-64 h-64 bg-gradient-to-br from-indigo-500/25 to-cyan-500/25 rounded-full blur-3xl animate-bounce" style={{animationDuration: '4s'}}></div>
-        <div className="absolute top-1/2 right-1/4 w-32 h-32 bg-gradient-to-br from-purple-500/35 to-pink-500/35 rounded-full blur-2xl animate-ping" style={{animationDuration: '3s'}}></div>
-
-        {/* Floating Particles */}
-        <div className="absolute top-40 left-40 w-3 h-3 bg-purple-400 rounded-full animate-bounce opacity-60"></div>
-        <div className="absolute top-60 right-60 w-2 h-2 bg-indigo-400 rounded-full animate-bounce opacity-60" style={{animationDelay: '0.5s'}}></div>
-        <div className="absolute bottom-60 left-1/3 w-2.5 h-2.5 bg-cyan-400 rounded-full animate-bounce opacity-60" style={{animationDelay: '1s'}}></div>
-
-        <div className="max-w-5xl mx-auto relative z-10">
-          {/* Back to Home Link */}
-          <div className='flex justify-start mb-12'>
-             <Link
+          <div className='flex justify-start'>
+                <Link
                   href="/"
                   className='inline-flex items-center px-6 py-3 bg-gray-900/60 backdrop-blur-sm rounded-full border border-purple-400/30 hover:bg-gray-800/60 hover:border-purple-400/50 transition-all duration-300 group text-sm font-semibold text-white shadow-lg shadow-purple-500/20'
                 >
@@ -100,7 +78,14 @@ export default function ContactPage() {
                   {t('backToHome')}
                   <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400' />
                 </Link>
-          </div>
+              </div>
+        {/* Background Grid */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(139,69,244,0.05)_1px,transparent_1px)] bg-[size:30px_30px] pointer-events-none" />
+
+       
+        <div className="max-w-5xl mx-auto relative z-10">
+          {/* Back to Home Link */}
+        
 
           {/* Hero Section */}
           <div className="text-center mb-20">
@@ -216,7 +201,7 @@ export default function ContactPage() {
                   </div>
                   <Button
                     type="submit"
-                    className="w-full text-lg font-bold bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-purple-500/40 hover:scale-105 rounded-xl h-14 tracking-wide"
+                    className="w-full text-lg font-bold bg-green-700 text-white transition-all duration-300 cursor-pointer rounded-xl h-14 tracking-wide"
                   >
                     {t("form.button")}
                   </Button>

@@ -13,7 +13,16 @@ const PrivacyPage = () => {
     <>
       <Header />
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative overflow-hidden">
-        
+        <div className='flex justify-start m-8'>
+                <Link
+                  href="/"
+                  className='inline-flex items-center px-6 py-3 bg-gray-900/60 backdrop-blur-sm rounded-full border border-purple-400/30 hover:bg-gray-800/60 hover:border-purple-400/50 transition-all duration-300 group text-sm font-semibold text-white shadow-lg shadow-purple-500/20'
+                >
+                  <Home className='h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400' />
+                  {t('backToHome')}
+                  <ArrowRight className='h-4 w-4 ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400' />
+                </Link>
+              </div>
         {/* Background Grid */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(139,69,244,0.05)_1px,transparent_1px)] bg-[size:30px_30px] pointer-events-none"></div>
         
@@ -31,14 +40,7 @@ const PrivacyPage = () => {
             
             {/* Header Section */}
             <div className="mb-12">
-              <Link 
-                href="/" 
-                className='inline-flex items-center px-6 py-3 bg-gray-900/60 backdrop-blur-xl rounded-2xl border border-purple-400/30 hover:bg-gray-800/60 hover:border-purple-400/50 transition-all duration-300 group text-sm font-semibold text-white shadow-lg shadow-purple-500/20 mb-8'
-              >
-                <Home className='h-5 w-5 mr-3 group-hover:scale-110 transition-transform duration-300 text-purple-400' />
-                <span>{t('backToHome')}</span>
-                <ArrowRight className='h-5 w-5 ml-3 rotate-180 group-hover:scale-110 transition-transform duration-300 text-purple-400' />
-              </Link>
+             
               
               <div className="text-center mb-8">
                 <h1 className="text-5xl md:text-6xl font-black mb-4 bg-gradient-to-r from-white via-purple-200 to-indigo-200 bg-clip-text text-transparent tracking-wide drop-shadow-lg">
