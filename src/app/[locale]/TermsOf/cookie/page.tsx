@@ -13,8 +13,16 @@ export default function CookiePage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative overflow-hidden">
-        <div className='flex justify-start m-8'>
+      <main className="min-h-screen container mx-auto bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative overflow-hidden">
+        {/* Background Grid */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_2px,transparent_2px),linear-gradient(90deg,rgba(139,69,244,0.05)_2px,transparent_2px)] bg-[size:60px_60px]"></div>
+        
+        {/* Modern Background Orbs */}
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-conic from-purple-500/15 via-indigo-500/15 to-cyan-500/15 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-conic from-cyan-500/10 via-blue-500/10 to-purple-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+
+     
+        <div className='p-20'>
                 <Link
                   href="/"
                   className='inline-flex items-center px-6 py-3 bg-gray-900/60 backdrop-blur-sm rounded-full border border-purple-400/30 hover:bg-gray-800/60 hover:border-purple-400/50 transition-all duration-300 group text-sm font-semibold text-white shadow-lg shadow-purple-500/20'
@@ -25,18 +33,6 @@ export default function CookiePage() {
                 </Link>
               </div>
         
-        {/* Background Grid */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_2px,transparent_2px),linear-gradient(90deg,rgba(139,69,244,0.05)_2px,transparent_2px)] bg-[size:60px_60px]"></div>
-        
-        {/* Modern Background Orbs */}
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-conic from-purple-500/15 via-indigo-500/15 to-cyan-500/15 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-conic from-cyan-500/10 via-blue-500/10 to-purple-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
-
-        {/* Floating Particles */}
-        <div className="absolute top-20 left-20 w-3 h-3 bg-purple-400 rounded-full animate-bounce opacity-60"></div>
-        <div className="absolute top-40 right-32 w-2 h-2 bg-indigo-400 rounded-full animate-bounce opacity-60" style={{animationDelay: '0.5s'}}></div>
-        <div className="absolute bottom-32 left-1/3 w-2.5 h-2.5 bg-cyan-400 rounded-full animate-bounce opacity-60" style={{animationDelay: '1s'}}></div>
-
         <div className="relative z-10 px-6 py-12">
           <div className="max-w-6xl mx-auto">
             

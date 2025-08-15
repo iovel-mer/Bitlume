@@ -31,7 +31,7 @@ export default function SecurityPage() {
   return (
     <>
       <Header />
-      <main className='min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 text-white relative overflow-hidden'>
+      <main className='min-h-screen container mx-auto bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 text-white relative overflow-hidden'>
         {/* Background Grid */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(139,69,244,0.05)_1px,transparent_1px)] bg-[size:30px_30px] pointer-events-none" />
 
@@ -42,10 +42,7 @@ export default function SecurityPage() {
           <div className='absolute top-1/3 -left-32 w-64 h-64 bg-cyan-500/10 rounded-full blur-2xl animate-pulse delay-2000' />
         </div>
 
-        {/* Floating Particles */}
-        <div className="absolute top-20 left-20 w-3 h-3 bg-purple-400 rounded-full animate-bounce opacity-60"></div>
-        <div className="absolute top-40 right-32 w-2 h-2 bg-indigo-400 rounded-full animate-bounce opacity-60" style={{animationDelay: '0.5s'}}></div>
-        <div className="absolute bottom-32 left-1/3 w-2.5 h-2.5 bg-cyan-400 rounded-full animate-bounce opacity-60" style={{animationDelay: '1s'}}></div>
+        
 
         <div className='relative z-10'>
           <section className='container mx-auto text-center pt-20 pb-16 px-4 md:px-6'>

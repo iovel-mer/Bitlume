@@ -426,7 +426,7 @@ export default function RegisterPage() {
               <Button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white font-bold py-3 tracking-wide transition-all duration-200 transform hover:scale-105 shadow-lg shadow-purple-500/30 rounded-xl"
+                className="w-full cursor-pointer bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white font-bold py-3 tracking-wide transition-all duration-200 transform hover:scale-105 shadow-lg shadow-purple-500/30 rounded-xl"
               >
                 {isLoading ? (
                   <div className="flex items-center justify-center">

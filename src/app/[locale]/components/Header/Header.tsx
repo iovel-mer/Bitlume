@@ -15,7 +15,7 @@ export const Header: React.FC = () => {
   const t = useTranslations("Header")
 
   return (
-    <header className="bg-slate-950/95 backdrop-blur-2xl sticky top-0 z-50 border-b border-cyan-400/30">
+    <header className="container mx-auto bg-slate-950/95 backdrop-blur-2xl sticky top-0 z-50 border-b border-cyan-400/30">
       <div className="absolute inset-0 bg-gradient-to-r from-purple-900/30 via-transparent to-cyan-900/30"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_1200px_800px_at_50%_-30%,rgba(34,211,238,0.15),transparent)]"></div>
       

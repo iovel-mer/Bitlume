@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      <section className="min-h-screen relative bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 pt-0 overflow-hidden">
+      <section className="min-h-screen container mx-auto relative bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 pt-0 overflow-hidden">
         {/* Background Grid */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(139,69,244,0.05)_1px,transparent_1px)] bg-[size:30px_30px] pointer-events-none" />
 
@@ -19,11 +19,7 @@ export default function AboutPage() {
         <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-gradient-conic from-purple-500/15 via-indigo-500/15 to-cyan-500/15 rounded-full blur-3xl animate-spin" style={{animationDuration: '20s'}}></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-conic from-cyan-500/10 via-blue-500/10 to-purple-500/10 rounded-full blur-3xl animate-spin" style={{animationDuration: '25s', animationDirection: 'reverse'}}></div>
         
-        {/* Floating Particles */}
-        <div className="absolute top-20 left-20 w-3 h-3 bg-purple-400 rounded-full animate-bounce opacity-60"></div>
-        <div className="absolute top-40 right-32 w-2 h-2 bg-indigo-400 rounded-full animate-bounce opacity-60" style={{animationDelay: '0.5s'}}></div>
-        <div className="absolute bottom-32 left-1/3 w-2.5 h-2.5 bg-cyan-400 rounded-full animate-bounce opacity-60" style={{animationDelay: '1s'}}></div>
-
+       
         {/* HERO SECTION */}
            <div className='flex justify-start m-10'>
                 <Link

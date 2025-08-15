@@ -78,8 +78,8 @@ export default function HelpPage(){
   return (
     <>
       <Header />
-      <main className="bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative px-4 py-16 sm:px-6 lg:px-8 mx-auto min-h-screen overflow-hidden text-white">
-         <div className='flex justify-start'>
+      <main className="bg-gradient-to-br container mx-auto from-gray-900 via-slate-900 to-gray-950 relative px-4 py-16 sm:px-6 lg:px-8 min-h-screen overflow-hidden text-white">
+         <div className='p-20'>
                 <Link
                   href="/"
                   className='inline-flex items-center px-6 py-3 bg-gray-900/60 backdrop-blur-sm rounded-full border border-purple-400/30 hover:bg-gray-800/60 hover:border-purple-400/50 transition-all duration-300 group text-sm font-semibold text-white shadow-lg shadow-purple-500/20'

@@ -66,7 +66,7 @@ export const Hero: React.FC = () => {
   }
 
   return (
-    <section className="min-h-screen bg-slate-950 relative text-white overflow-hidden">
+    <section className="container mx-auto min-h-screen bg-slate-950 relative text-white overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-slate-950 to-cyan-900/30"></div>
@@ -83,11 +83,11 @@ export const Hero: React.FC = () => {
       <div className="container mx-auto px-6 py-8 relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 items-center min-h-screen">
           {/* Hero Content */}
-          <div className="lg:col-span-7 space-y-8">
+          <div className="lg:col-span-7 space-y-8 mb-50">
            
 
             {/* Main Headline */}
-            <div className="space-y-6">
+            <div className="space-y-6 ">
               <div className="space-y-4">
                 <h1 className="text-6xl md:text-7xl lg:text-8xl font-black leading-none tracking-tight">
                   <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300 drop-shadow-lg">{t("nextGen")}</span>
@@ -119,7 +119,7 @@ export const Hero: React.FC = () => {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link href={`/${locale}/login`}>
+              <Link href={`/${locale}/register`}>
                 <Button className="group relative overflow-hidden flex items-center gap-3 px-8 py-4 rounded-full text-lg font-bold 
                   bg-slate-800/70 backdrop-blur-sm text-white border border-cyan-400/50 shadow-2xl shadow-cyan-500/30
                   hover:bg-slate-700/70 hover:border-cyan-400/70 hover:shadow-2xl hover:shadow-purple-500/50 hover:scale-110
