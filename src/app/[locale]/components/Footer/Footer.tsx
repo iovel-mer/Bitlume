@@ -166,7 +166,7 @@ export default function Footer() {
             <div className="inline-flex items-center space-x-4 px-8 py-4 bg-gradient-to-r from-gray-800/60 to-slate-900/60 backdrop-blur-xl border border-purple-400/30 rounded-full shadow-lg shadow-purple-500/20">
               <span className="text-purple-400 animate-pulse">●</span>
               <span className="text-gray-300 font-medium">
-                © {new Date().getFullYear()} BITLUME {tFooter('rights')}
+                © {new Date().getFullYear()} Bitlume {tFooter('rights')}
               </span>
             </div>
           </div>

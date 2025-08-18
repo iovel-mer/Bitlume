@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-purple-900/30 via-transparent to-cyan-900/30"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_1200px_800px_at_50%_-30%,rgba(34,211,238,0.15),transparent)]"></div>
       
-      <div className="relative container mx-auto px-6 py-5">
+      <div className="relative  mx-auto px-6 py-5">
         <div className="flex items-center justify-between">
           {/* Logo and Brand */}
           <div className="flex items-center space-x-4">

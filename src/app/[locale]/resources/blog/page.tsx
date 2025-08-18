@@ -33,7 +33,7 @@ export default function BlogPage() {
   return (
     <>
       <Header />
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative">
+    <div className="min-h-screen pt-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative">
        <div className='flex justify-start p-8'>
                 <Link
                   href="/"
