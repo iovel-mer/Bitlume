@@ -78,7 +78,7 @@ export default function HelpPage(){
   return (
     <>
       <Header />
-      <main className="bg-gradient-to-br container mx-auto from-gray-900 via-slate-900 to-gray-950 relative px-4 py-16 sm:px-6 lg:px-8 min-h-screen overflow-hidden text-white">
+      <main className="bg-gradient-to-br  mx-auto from-gray-900 via-slate-900 to-gray-950 relative px-4 py-16 sm:px-6 lg:px-8 min-h-screen overflow-hidden text-white">
         <div className='p-4 mb-10 sm:p-6 md:p-8 lg:p-12 xl:p-20'>
                 <Link
                   href="/"

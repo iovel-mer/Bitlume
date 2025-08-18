@@ -13,7 +13,7 @@ export default function CookiePage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen container pt-10 mx-auto bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative overflow-hidden">
+      <main className="min-h-screen  pt-10 mx-auto bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative overflow-hidden">
         {/* Background Grid */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_2px,transparent_2px),linear-gradient(90deg,rgba(139,69,244,0.05)_2px,transparent_2px)] bg-[size:30px_30px] sm:bg-[size:40px_40px] md:bg-[size:50px_50px] lg:bg-[size:60px_60px]"></div>
         

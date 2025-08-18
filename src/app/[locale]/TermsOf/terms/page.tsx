@@ -11,7 +11,7 @@ export default function TermsOfService() {
   return (
     <>
       <Header />
-      <main className="min-h-screen container mx-auto bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 text-white px-3 sm:px-4 md:px-6 py-8 sm:py-12 md:py-16 lg:py-20 relative">
+      <main className="min-h-screen  mx-auto bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 text-white px-3 sm:px-4 md:px-6 py-8 sm:py-12 md:py-16 lg:py-20 relative">
         {/* Background Grid */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(139,69,244,0.05)_1px,transparent_1px)] bg-[size:30px_30px] pointer-events-none" />
 

@@ -36,7 +36,7 @@ export default function Footer() {
   return (
     <div className='relative'>
       {/* Footer */}
-      <footer className='py-12 container mx-auto px-6 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative text-white overflow-hidden'>
+      <footer className='py-12  mx-auto px-6 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative text-white overflow-hidden'>
         {/* Modern Grid Background */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(139,69,244,0.05)_1px,transparent_1px)] bg-[size:30px_30px] pointer-events-none" />
         

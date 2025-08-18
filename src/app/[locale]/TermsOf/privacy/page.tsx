@@ -12,7 +12,7 @@ const PrivacyPage = () => {
   return (
     <>
       <Header />
-      <div className="min-h-screen container mx-auto bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative overflow-hidden">
+      <div className="min-h-screen  mx-auto bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative overflow-hidden">
         <div className='flex justify-start m-4 sm:m-6 md:m-8 lg:m-10'>
                <Link
                   href="/"

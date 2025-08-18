@@ -31,7 +31,7 @@ export default function SecurityPage() {
   return (
     <>
       <Header />
-      <main className='min-h-screen container mx-auto bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 text-white relative overflow-hidden'>
+      <main className='min-h-screen mx-auto bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 text-white relative overflow-hidden'>
         {/* Background Grid */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(139,69,244,0.05)_1px,transparent_1px)] bg-[size:30px_30px] pointer-events-none" />
 

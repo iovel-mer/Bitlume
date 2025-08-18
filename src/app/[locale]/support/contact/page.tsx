@@ -93,7 +93,7 @@ export default function ContactPage() {
   return (
     <>
       <Header />
-      <div className="min-h-screen container mx-auto py-8 sm:py-12 md:py-16 px-3 sm:px-4 md:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative overflow-hidden">
+      <div className="min-h-screen  mx-auto py-8 sm:py-12 md:py-16 px-3 sm:px-4 md:px-6 lg:px-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 relative overflow-hidden">
         {/* Background Grid */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(139,69,244,0.05)_1px,transparent_1px)] bg-[size:30px_30px] pointer-events-none" />
 

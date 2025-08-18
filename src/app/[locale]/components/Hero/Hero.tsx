@@ -66,7 +66,7 @@ export const Hero: React.FC = () => {
   }
 
   return (
-    <section className="w-full min-h-screen bg-slate-950 relative text-white overflow-hidden">
+    <section className=" mx-auto w-full min-h-screen bg-slate-950 relative text-white overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-slate-950 to-cyan-900/30"></div>
@@ -80,8 +80,8 @@ export const Hero: React.FC = () => {
         <div className="hidden sm:block absolute top-1/3 right-1/3 w-2 h-2 bg-cyan-300 rounded-full animate-bounce opacity-40"></div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12 items-center min-h-screen">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8  relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12  items-center lg:pt-40">
           {/* Hero Content */}
           <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left">
             {/* Main Headline */}

@@ -11,7 +11,7 @@ export default function DocumentationPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen container mx-auto relative bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 text-white py-6 sm:py-8 md:py-12 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-20 overflow-hidden">
+      <main className="min-h-screen  mx-auto relative bg-gradient-to-br from-gray-900 via-slate-900 to-gray-950 text-white py-6 sm:py-8 md:py-12 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-20 overflow-hidden">
         {/* Background Grid */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(139,69,244,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(139,69,244,0.05)_1px,transparent_1px)] bg-[size:20px_20px] sm:bg-[size:25px_25px] md:bg-[size:30px_30px] pointer-events-none" />
         
