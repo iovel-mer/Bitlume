@@ -105,7 +105,7 @@ export default function ContactPage() {
           >
             <Home className="h-3 w-3 sm:h-4 sm:w-4 mr-1.5 sm:mr-2 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400" />
             <span className="hidden sm:inline">{t('backToHome')}</span>
-            <span className="sm:hidden">Home</span>
+           
             <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 ml-1.5 sm:ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400" />
           </Link>
         </div>
@@ -234,13 +234,7 @@ export default function ContactPage() {
                     />
                   </div>
 
-                  {/* Success Message */}
-                  {successMessage && (
-                    <div className="flex items-center gap-3 p-3 sm:p-4 bg-green-500/10 border border-green-500/30 rounded-xl backdrop-blur-sm">
-                      <div className="h-4 w-4 sm:h-5 sm:w-5 bg-green-400 rounded-full flex-shrink-0"></div>
-                      <p className="text-green-200 text-xs sm:text-sm font-medium">{successMessage}</p>
-                    </div>
-                  )}
+                 
 
                   <Button
                     type="submit"

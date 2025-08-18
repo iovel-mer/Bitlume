@@ -27,7 +27,7 @@ export default function TermsOfService() {
           >
             <Home className="h-3 w-3 sm:h-4 sm:w-4 mr-1.5 sm:mr-2 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400" />
             <span className="hidden sm:inline">{t('backToHome')}</span>
-            <span className="sm:hidden">Home</span>
+            {/* <span className="sm:hidden">Home</span> */}
             <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 ml-1.5 sm:ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400" />
           </Link>
         </div>
