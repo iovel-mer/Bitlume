@@ -174,26 +174,26 @@ export const Market: React.FC = () => {
             <p className="text-red-300 text-sm sm:text-lg font-mono uppercase tracking-wide">{error}</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 place-items-center">
+          <div className="grid gap-4 sm:gap-6 lg:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-rows-fr">
             {marketData.map((coin, index) => (
               <div
                 key={coin.symbol}
-                className="group relative w-full max-w-[280px] sm:max-w-[300px] bg-white/5 hover:border-cyan-400/70 transition-all duration-500 hover:scale-[1.03] sm:hover:scale-105 overflow-hidden p-4 sm:p-6 shadow-2xl hover:shadow-cyan-500/30"
+                className="group relative min-w-[280px] w-full bg-white/5 hover:border-cyan-400/70 transition-all duration-500 hover:scale-[1.03] sm:hover:scale-105 overflow-hidden p-4 sm:p-6 shadow-2xl hover:shadow-cyan-500/30"
                 style={{
                   clipPath: "polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)",
                   animationDelay: `${index * 0.1}s`,
                 }}
               >
                 <div className="relative z-10">
-                  <div className="flex flex-wrap items-start justify-between mb-4 sm:mb-6 gap-3">
-                    <div className="flex items-center space-x-3 sm:space-x-4">
+                  <div className="flex items-start justify-between mb-4 sm:mb-6">
+                    <div className="flex items-center space-x-3 sm:space-x-4 min-w-0 flex-1">
                       <CryptoLogo coin={coin} size={48} />
-                      <div>
-                        <h4 className="font-black text-sm sm:text-lg text-cyan-100 uppercase tracking-wide font-mono">{coin.name}</h4>
+                      <div className="min-w-0 flex-1">
+                        <h4 className="font-black text-sm sm:text-lg text-cyan-100 uppercase tracking-wide font-mono truncate">{coin.name}</h4>
                         <p className="text-cyan-400/80 text-xs sm:text-sm font-mono uppercase">{coin.symbol}</p>
                       </div>
                     </div>
-                    <div className={`flex items-center gap-1 text-xs sm:text-sm font-mono ${coin.change >= 0 ? "text-green-300" : "text-red-300"}`}>
+                    <div className={`flex items-center gap-1 text-xs sm:text-sm font-mono whitespace-nowrap ml-2 ${coin.change >= 0 ? "text-green-300" : "text-red-300"}`}>
                       {coin.change >= 0 ? <TrendingUp className="w-3 h-3 sm:w-4 sm:h-4" /> : <TrendingDown className="w-3 h-3 sm:w-4 sm:h-4" />}
                       {formatChange(coin.change)}
                     </div>

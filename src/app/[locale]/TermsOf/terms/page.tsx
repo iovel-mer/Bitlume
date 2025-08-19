@@ -26,8 +26,8 @@ export default function TermsOfService() {
             className='inline-flex items-center px-3 xs:px-4 sm:px-6 py-2 xs:py-2.5 sm:py-3 bg-gray-900/60 backdrop-blur-sm rounded-full border border-purple-400/30 hover:bg-gray-800/60 hover:border-purple-400/50 transition-all duration-300 group text-xs xs:text-sm font-semibold text-white shadow-lg shadow-purple-500/20'
           >
             <Home className='h-3 w-3 xs:h-4 xs:w-4 mr-1.5 xs:mr-2 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400' />
-            <span className="hidden xs:inline">{t('backToHome')}</span>
-            <span className="xs:hidden">Home</span>
+            <span className="sm:block">{t('backToHome')}</span>
+            
             <ArrowRight className='h-3 w-3 xs:h-4 xs:w-4 ml-1.5 xs:ml-2 rotate-180 group-hover:-translate-x-1 transition-transform duration-300 text-purple-400' />
           </Link>
         </div>
